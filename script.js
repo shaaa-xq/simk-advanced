@@ -5,8 +5,3 @@ dropdown.addEventListener("click", function () {
   content.classList.toggle("show-dropdown");
   content.classList.toggle("hide-dropdown");
 });
-
-// function showDropdown() {}
-
-// flatpickr
-// flatpickr("#calendar", {});
