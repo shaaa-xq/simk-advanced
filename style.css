@@ -5,7 +5,7 @@
   font-family: Montserrat;
 }
 .header {
-  border: 1px solid gray;
+  border: 1px solid #f1f1f1;
   /* background-color: aqua; */
   padding: 0 100px;
   display: flex;
@@ -47,11 +47,15 @@
   width: 60%;
   float: left;
 }
+/* .container-img-gradient{
+  
+} */
 
 /* container login */
 .container-login {
+  height: 946px;
   width: 40%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   float: right;
   background-image: linear-gradient(to top, #c5e0f780, #ffffff, #ffffff);
 }
@@ -72,7 +76,7 @@
   margin-top: 20px;
 }
 .desc-text p {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 10px;
   margin: 0 70px;
 }
@@ -129,11 +133,12 @@
 /* dropdown content */
 .dropdown-4 {
   width: auto;
-  border: 1px solid black;
-  height: 215px;
+  border: 2px solid #f1f1f1;
+  height: 230px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: -9px 20px 10px#3e434a1c;
+  /* visibility: hidden; */
 }
 .content-title {
   margin: 15px 12px;
@@ -156,6 +161,7 @@ hr {
   margin: 8px 12px;
   display: flex;
   justify-content: space-between;
+  cursor: default;
 }
 .content span {
   color: #4a505c;
@@ -175,7 +181,13 @@ hr {
   padding: 7px;
   color: #6c717a;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.minus-btn i {
+  position: relative;
+  left: 4px;
+  top: 1px;
 }
 .number {
   width: 40px;
@@ -195,15 +207,36 @@ hr {
   font-size: 20px;
   padding: 7px;
   color: #ffffff;
+  cursor: pointer;
+}
+.plus-btn i {
+  position: relative;
+  left: 4px;
+  top: 1px;
 }
 .done-btn {
   /* background-color: #ffffff; */
+  height: 2px;
   color: #002662;
   text-align: right;
-  /* padding-right: 12px; */
   padding: 20px 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
-/* .copyright {
-  text-align: center;
+
+.copyright {
+  display: flex;
+  margin: 244px 57px 64px 57px;
+  font-size: 14px;
+  font-weight: 500;
   padding: 0;
-} */
+  color: #4a505c;
+}
+
+/* hide / show dropdown */
+.show-dropdown {
+  visibility: visible;
+}
+.hide-dropdown {
+  visibility: hidden;
+}
